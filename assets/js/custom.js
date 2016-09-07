@@ -23,14 +23,24 @@ $(document).ready(function(){
      $('[data-toggle="tooltip"]').tooltip();   
 
     /* google search button animation*/
-    $(".srch-content-menu a.toggle.btn").on('click',function(){
+    $(".srch-content-menu a.toggle.btn").on('click',function(event){
+      event.preventDefault();
       if(screen.width>767){
-        $(".srch-content-menu div#credits").toggle().css({width:"40px"}).animate({width: "180px"},300).removeClass('hidden');
+        $(".srch-content-menu div#credits").toggleClass('hidden show').css({width:"40px"}).animate({width: "180px"},300);
       }
       else{
-        $(".srch-content-menu div#credits").toggle().css({width:"40px"}).animate({width: "100px","padding-right":"10px"},300).removeClass('hidden');
+        var length=$('#gsc-i-id2').val().length;
+    if(length != 0){
+   $('.srch-content-menu .srch-txt').removeClass('srch-txt-hide');
+   $('input.gsc-search-button.gsc-search-button-v2').trigger('click');
+   $('#gsc-i-id2').val('');
+   }
+   else{
+     $(".srch-content-menu div#credits").toggleClass('hidden show').css({width:"40px"}).animate({width: "100px","padding-right":"10px"},300);
+     $('.srch-content-menu .srch-txt').toggleClass('srch-txt-hide');
+   }
       }
-      $('.srch-content-menu .srch-txt').toggleClass('srch-txt-hide');
+      
     });
     $(".srch-content-menu a.toggle-hw.btn").on('click',function(event){
       event.preventDefault();
@@ -38,13 +48,28 @@ $(document).ready(function(){
         $(".srch-content-menu div#credits").toggleClass('hidden show').css({width:"40px"}).animate({width: "180px"},300);
       }
       else{
-        $(".srch-content-menu div#credits").toggleClass('hidden show').css({width:"40px"}).animate({width: "100px","padding-right":"10px"},300);
+        var length=$('#gsc-i-id1').val().length;
+    if(length != 0){
+   $('.srch-content-menu .srch-txt').removeClass('srch-txt-hide');
+   $('input.gsc-search-button.gsc-search-button-v2').trigger('click');
+   $('#gsc-i-id1').val('');
+   }
+   else{
+     $(".srch-content-menu div#credits").toggleClass('hidden show').css({width:"40px"}).animate({width: "100px","padding-right":"10px"},300);
+     $('.srch-content-menu .srch-txt').toggleClass('srch-txt-hide');
+   }
       }
-      $('.srch-content-menu .srch-txt').toggleClass('srch-txt-hide');
+      
     });
 
-    
-    
+ /* $('.toggle-hw').on('click',function(){
+    var length=$('#gsc-i-id1').val().length;
+    if(length != 0){
+       debugger;
+       alert(length);
+   $('input.gsc-search-button.gsc-search-button-v2').trigger('click');
+   }
+});*/
 
     /* end */
 
@@ -1803,62 +1828,62 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $(".hide-scroll").show();
     });
     if(screen.width>767 && screen.width<1199){
-      $('.hwmt #nav-icon1,.hw-others #nav-icon1').on('click', function() {
-          $('#toc').animate({
+      $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+          $('#toc1').animate({
               width: '300px',
               right: 0
           });
       });
-      $('.hwmt #button1,.hw-others #button1,main').on('click', function() {
+      $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
           $('#toc').animate({
               width: 0,
               right: 0
           });
       });
       $('.hwmt .single-item').on('click', function() {
-          $('.hwmt #toc').animate({
+          $('.hwmt #toc1').animate({
               width: 0,
               right: 0
           });
       });
     }
     else{
-      $('.hwmt #nav-icon1,.hw-others #nav-icon1').on('click', function() {
-          $('#toc').animate({
+      $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+          $('#toc1').animate({
               width: '100%',
               right: 0
           });
       });
-      $('.hwmt #button1,.hw-others #button1').on('click', function() {
-          $('#toc').animate({
+      $('.hwmt #button2,.hw-others #button2').on('click', function() {
+          $('#toc1').animate({
               width: 0,
               right: 0
           });
       });
     }
     if(screen.width>767){
-      $('.hwmt #nav-icon1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #nav-icon2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: '300px',
               right: 0
           });
       });
-      $('.hwmt #button1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #button2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: 0,
               right: 0
           });
       });
     }
     else{
-      $('.hwmt #nav-icon1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #nav-icon2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: '100%',
               right: 0
           });
       });
-      $('.hwmt #button1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #button2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: 0,
               right: 0
           });
@@ -1948,8 +1973,8 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
 
     $('.pf-dd a').on('click',function(){
   var clickid=$(this).attr('clickid');
-  var id = $('.pf-dd a').attr('id');
-if (id == "pvh-3-3") {
+  $('html, body').animate({scrollTop: '0px'});
+if (clickid=="pvh-3") {
   $('.slick-next').trigger('click');
 }
 else {
@@ -1959,10 +1984,22 @@ else {
 });
 
     // $(window).load(function() {
-    if(window.location.href == "http://127.0.0.1:4000/portfolio/#mobility"){
+    // if(window.location.href == "http://127.0.0.1:4000/portfolio/#mobility"){
 
-     }
+    //  }
+
     // });
+// $(window).load(function() {
+//     if(pageName == "bootcamp" || pageName == "blog" || pageName == "casestudy" || pageName == "collaborative_workforce" || pageName == "company" || pageName == "job_board" || pageName == "engage_us" || pageName == "navblog_detail" || pageName == "our_thinking"){
+//       $('.pf-dd a').on('click',function(){
+//       $("#pvh5-5").attr("href", "http://127.0.0.1:4000/portfolio/#mobility");
+//       $("#pvh1-1").attr("href", "http://127.0.0.1:4000/portfolio/#DataOps");
+//       $("#pvh2-2").attr("href", "http://127.0.0.1:4000/portfolio/#DevOps");
+//       $("#pvh3-3").attr("href", "http://127.0.0.1:4000/portfolio/#DataScience");
+//       $("#pvh4-4").attr("href", "http://127.0.0.1:4000/portfolio/#ui-ux");
+//        });
+//      }
+//     });
 // var pencilliquid1 = document.querySelector ('#pencil-liquid1');
 //     var myTimeline = new TimelineMax({tweens:
 // [new TweenMax(pencil-liquid1, 0, {x:"0",y:"5px"})], 
@@ -2126,6 +2163,7 @@ function rotate(el, degs) {
   $(el).css(styles);
 }
 
+if(screen.width<1199){
 (function() {
           var $section = $('.focal');
           var $panzoom = $section.find('.panzoom').panzoom();
@@ -2140,6 +2178,22 @@ function rotate(el, degs) {
             });
           });
         })();
+(function() {
+          var $section = $('.focal1');
+          var $panzoom = $section.find('.panzoom1').panzoom();
+          $panzoom.parent().on('mousewheel.focal1', function( e ) {
+            e.preventDefault();
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('zoom', zoomOut, {
+              increment: 0.1,
+              animate: false,
+              focal: e
+            });
+          });
+        })();
+      }
+      
 // $('.eng-zoom-in').click(function () {
 //      var w1=$(".zoomin1 img").width()/$(".zoomin1 img").parent().width() * 100+"%";
 //   if(w1<130+"%"){
@@ -2196,24 +2250,42 @@ function rotate(el, degs) {
 //   }
 //    });
 // $("#eng-zoom-out").pinchzoomer();
-if(pageName == "homepage"){
+// if(pageName == "homepage"){
   
-  $("#logo-img img").one('load', function() {
-      setTimeout(logo_img,200);
+  // $("#logo-img img").one('load', function() {
+  //     setTimeout(logo_img,200);
+  //   });
+  // function logo_img(){
+  //   // $('#logo-img').hide('clip',{direction:"horizontal"},4000);
+  //   var myDiv = document.getElementById("logo-img");
+  //   var show = function(){
+  //     setTimeout(hide, 3000); 
+  //   }
+  //   var hide = function(){
+  //     $('#logo-img').hide();
+  //     $('#home-screen').css('visibility','visible');
+  //   }
+  //   show();
+  // }
+  $(window).load(function(){
+$("#logo-img").fadeOut(2000, function() {
+        $("#home-screen").fadeIn(1000);        
     });
-  function logo_img(){
-    // $('#logo-img').hide('clip',{direction:"horizontal"},4000);
-    var myDiv = document.getElementById("logo-img");
-    var show = function(){
-      setTimeout(hide, 4000); 
-    }
-    var hide = function(){
-      $('#logo-img').hide();
-      // $('#home-screen').css('visibility','visible');
-    }
-    show();
-  }
-}
+});
+
+//   $(window).ready(function(){
+//     debugger;
+//     $('#logo-img').removeClass('hide');
+
+//     $('#logo-img').fadeOut(3000,function(){
+//       $('#logo-img').addClass('hide');
+// $('#home-screen').removeClass('hide');
+// $('#home-screen').fadeIn(1);
+
+//     });
+    
+// });
+// }
 var body = document.documentElement;
 if (body.requestFullscreen) {
 body.requestFullscreen();
@@ -2224,7 +2296,6 @@ body.mozrequestFullscreen();
 } else if (body.msrequestFullscreen) {
 body.msrequestFullscreen();
 }
-
 // window.addEventListener("load", function() { window. scrollTo(0, 0); });
 // document.addEventListener("touchmove", function(e) { e.preventDefault() });
 // var expanded = false;

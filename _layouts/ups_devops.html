@@ -2,8 +2,8 @@
 <div id="ups-devops">
 <!-- ups-devops carousel -->
 
-<div class="devops-img-header"><img src="/assets/img/arrows.png" class="devopss-fa-arrow-left devopss-fa-arrow-left1"></div>
-	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading devops-heading"> <img src="/assets/img/arrows.png" class="devopss-fa-arrow-left devopss-fa-arrow-left1">
+<div class="devops-img-header"><img src="/assets/img/arrows.png" class="devopss-fa-arrow-left devopss-fa-arrow-left1" alt="arrow"></div>
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading devops-heading"> <img src="/assets/img/arrows.png" alt="arrow" class="devopss-fa-arrow-left devopss-fa-arrow-left1">
 <span>Devops</span></h1>
    		<div class="carousel-padding">
 		   	<div class="line"></div>
@@ -50,21 +50,21 @@
 		    <div class="carousel-div">
 		        <li id="tab-1" class="active c-flex devops-c-flex tab-val pvh-active"><a class="hr-display"  data-toggle="tab" href="#introduction" >
 		        	<ul class="tab-img">
-		        		<li  class="li-tab-mar  li-second"><img src="/assets/img/upskilling/upskilling-tabs/Introduction.svg"></li>
+		        		<li  class="li-tab-mar  li-second"><img src="/assets/img/upskilling/upskilling-tabs/Introduction.svg" alt="introduction"></li>
 		        		<li class="gotham-rounded-light text-center devops-para"><p class="text-center">Introduction</p></li>
 					</ul></a>
 				</li>
 		        
 		        <li id="tab-2" class="c-flex devops-c-flex tab-val"><a  class="hr-display" data-toggle="tab" href="#objectives" >
 		        	<ul class="tab-img">
-		        		<li class="li-tab-mar li-second"><img src="/assets/img/upskilling/upskilling-tabs/Objective.svg"></li>
+		        		<li class="li-tab-mar li-second"><img src="/assets/img/upskilling/upskilling-tabs/Objective.svg" alt="objective"></li>
 		        		<li class="gotham-rounded-light text-center devops-para"><p>Objectives</p></li>
 					</ul></a>
 		        </li>
 
 		        <li id="tab-3" class="c-flex devops-c-flex tab-val"><a  class="hr-display" data-toggle="tab" href="#audience" >
 		        	<ul class="tab-img" >
-		        		<li class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Audience.svg"></li>
+		        		<li class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Audience.svg" alt="audience"></li>
 		        		<li class="gotham-rounded-light text-center devops-para"><p>Audience</p></li>
 					</ul></a>
 		        </li>
@@ -255,14 +255,14 @@
 				    <div id="collapseFive" class="panel-collapse collapse">
 				      <div class="panel-body">
 				        <ul>
-				        	{%for adaptive in page.Course_Details.Prescriptive_Adaptive_process%}
+				        	{%for adaptive in page.Course_Details.Level_of_Abstraction%}
 		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
 				    </div>
 				  </div>
-				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
 				    <div class="panel-heading">
 				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
@@ -271,7 +271,7 @@
 						</i>
 				      </h4>
 				    </div>
-				    <div id="collapseFive" class="panel-collapse collapse">
+				    <div id="collapseSix" class="panel-collapse collapse">
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Project_Management%}
@@ -281,7 +281,7 @@
 				      </div>
 				    </div>
 				  </div>
-				  	   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+				  	   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 				    <div class="panel-heading">
 				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
@@ -290,7 +290,7 @@
 						</i>
 				      </h4>
 				    </div>
-				    <div id="collapseSix" class="panel-collapse collapse">
+				    <div id="collapseSeven" class="panel-collapse collapse">
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Version_Control%}
@@ -300,7 +300,7 @@
 				      </div>
 				    </div>
 				  </div>
-				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
 				    <div class="panel-heading">
 				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
@@ -309,29 +309,10 @@
 						</i>
 				      </h4>
 				    </div>
-				    <div id="collapseSeven" class="panel-collapse collapse">
-				      <div class="panel-body">
-				        <ul>
-				        	{%for adaptive in page.Course_Details.Continuous_Integration%}
-		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
-		        			{%endfor%}
-		        		</ul>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
-				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
-				        <a class=" pull-left gotham-rounded-bok" >
-				         Infrastructure Automation
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
-						</i>
-				      </h4>
-				    </div>
 				    <div id="collapseEight" class="panel-collapse collapse">
 				      <div class="panel-body">
 				        <ul>
-				        	{%for adaptive in page.Course_Details.Infrastructure_Automation%}
+				        	{%for adaptive in page.Course_Details.Continuous_Integration%}
 		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
@@ -342,7 +323,7 @@
 				    <div class="panel-heading">
 				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
-				         Deployment Automation
+				         Infrastructure Automation
 				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
@@ -350,7 +331,7 @@
 				    <div id="collapseNine" class="panel-collapse collapse">
 				      <div class="panel-body">
 				        <ul>
-				        	{%for adaptive in page.Course_Details.Deployment_Automation%}
+				        	{%for adaptive in page.Course_Details.Infrastructure_Automation%}
 		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
@@ -361,12 +342,31 @@
 				    <div class="panel-heading">
 				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
-				        Monitoring
+				         Deployment Automation
 				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
 				    <div id="collapseTen" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Deployment_Automation%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				        Monitoring
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseEleven" class="panel-collapse collapse">
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Monitoring%}
