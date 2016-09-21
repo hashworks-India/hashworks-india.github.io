@@ -17,11 +17,15 @@ $(document).ready(function() {
         }
 
     });
+     
     $(window).mouseleave(function() {
+        if (screen.width > 1199) {
         if (!$("#gsc-i-id1").val()) {
             $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
         }
+        }
     });
+
 
 
     /* scroll up */
