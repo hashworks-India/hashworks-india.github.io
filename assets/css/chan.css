@@ -40,7 +40,7 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     background: none;
     border: none;
-    padding-top: -27px;
+    padding-top: 0;
     }
     #credits .form-control {
     background-color: #fff;
@@ -256,13 +256,12 @@ div#mb4-testimonial-first {
     }
     ul li ul.dropdown li {
         color: #fff;
-        -webkit-transition: color .5s ease 0s;
+        /*-webkit-transition: color .5s ease 0s;
         -moz-transition: color .5s ease 0s;
-        -ms-transition: color .5s ease 0s;
         -o-transition: color .5s ease 0s;
-        transition: color .5s ease 0s;
+        transition: color .5s ease 0s;*/
         cursor: pointer;
-        
+        -ms-backface-visibility: hidden;
     }
     ul li ul.dropdown {
         background-color: rgba(12, 200, 219, 0.6);
@@ -271,13 +270,15 @@ div#mb4-testimonial-first {
         line-height: 1;
         width: 175px;
         position: absolute;
-        z-index: 9;
-        -webkit-transition: background-color .5s ease 0s;
+        z-index: 300000;
+        /*-webkit-transition: background-color .5s ease 0s;
         -moz-transition: background-color .5s ease 0s;
-        -ms-transition: background-color .5s ease 0s;
         -o-transition: background-color .5s ease 0s;
-        transition: background-color .5s ease 0s;
-        
+        transition: background-color .5s ease 0s;*/
+         backface-visibility: hidden;
+    }
+    #Hashworks-Nav{
+        backface-visibility: hidden;
     }
     .dropdown-width {
         width: 200px !important;
@@ -289,6 +290,7 @@ div#mb4-testimonial-first {
         padding: 5px 15px;
         line-height: 1.8;
         border-bottom: 1px solid #fff;
+        backface-visibility: hidden;
     }
 
     ul li ul.dropdown a:last-child {
@@ -298,6 +300,7 @@ div#mb4-testimonial-first {
     ul li ul.dropdown a:hover {
         visibility: visible;
         background-color: rgba(12, 200, 219, 1);
+        backface-visibility: hidden;
     }
 
     .hw-socialshare:hover {
