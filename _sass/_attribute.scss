@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'g-bold';
-    src: url('../font/gotham-rounded-bold.otf');
+    src: url('../font/gotham-rounded-bold.otf'); 
 }
 
 @font-face {
@@ -81,75 +81,73 @@ $primaryparafont : 16px;
 .commonInputBox {
         width : 340px;
         height: 30px;
-        border-left : 2px solid $primarycolor;
-        border-right : 2px solid $primarycolor;
+      border: 1px solid $primarycolor; 
         outline: none; 
         padding: 0rem 1rem;
-        border-top: 1px solid #b9b9b9;
-        border-bottom: 1px solid $primarycolor;
+      
 }
 
 
 @keyframes linear {
-	
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: 200px 0;
-	}
-	
+    
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 200px 0;
+    }
+    
 }
 
 @keyframes radial {
-	
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: 0 60px;
-	}
-	
+    
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 60px;
+    }
+    
 }
 
 @keyframes repeating {
-	
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: 0 85px;
-	}
-	
+    
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 85px;
+    }
+    
 }
 
 @keyframes electronic {
-	
-	0%, 100% {
-		background-position: 20px -30px;
-	}
-	25% {
-		background-position: 150px 5px;
-	}
-	50% {
-		background-position: 20px 40px;
-	}
-	75% {
-		background-position: -100px 5px;
-	}
-	
+    
+    0%, 100% {
+        background-position: 20px -30px;
+    }
+    25% {
+        background-position: 150px 5px;
+    }
+    50% {
+        background-position: 20px 40px;
+    }
+    75% {
+        background-position: -100px 5px;
+    }
+    
 }
 
 .biliboard {
-	  width: 157px;
+      width: 157px;
     height: 42px;
-	padding: 15px 40px;
-	text-align: center;
-	position: relative;
+    padding: 15px 40px;
+    text-align: center;
+    position: relative;
     font-size: 16px;
     font-family: 'g-bold';
-	background: $secondarybgcolor;
-	color: #fff;
+    background: $secondarybgcolor;
+    color: #fff;
     text-transform: uppercase;
     @media only screen and (min-width:320px) and (max-width:768px) {
             font-size: 15px;
@@ -165,7 +163,7 @@ $primaryparafont : 16px;
 
 
 .ion-social-facebook:hover {
-    color: #3b5998	;
+    color: #3b5998  ;
 }
 
 .ion-social-twitter:hover {
