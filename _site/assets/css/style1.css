@@ -448,13 +448,15 @@ header .headerRight {
       .clientTalk__content--comma2 {
         right: 20px; }
       .clientTalk__content--text h1 {
-        text-align: justify;
+        text-align: center;
         font-size: 16px;
         width: 60%; }
       .clientTalk__content--text h2 {
         text-align: center;
         margin-right: 0;
-        margin-top: 1.5rem; } }
+        margin-top: 1.5rem; }
+        .clientTalk__content--text h2 span {
+          display: block; } }
 
 .testimonial {
   padding: 60px 0px;
@@ -516,7 +518,7 @@ header .headerRight {
     .testimonial__content--comma1 {
       top: -12px; }
     .testimonial__content--comma2 {
-      top: -50px; } }
+      top: -40px; } }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     .testimonial__image {
       margin-right: 0;
