@@ -115,6 +115,9 @@ a {
 .noPaddingRight {
   padding-right: 0; }
 
+.visible-xs {
+  display: none; }
+
 .container {
   margin-left: auto;
   margin-right: auto; }
@@ -141,7 +144,10 @@ a {
     display: block !important; }
 
   .hide-xs {
-    display: none !important; } }
+    display: none !important; }
+
+  .visible-xs {
+    display: block; } }
 .commonFlex {
   display: flex; }
 

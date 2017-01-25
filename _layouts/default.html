@@ -44,11 +44,11 @@
                     <li><a href="/job_board">Career</a></li>
                     <li><a href="/company">Contact Us</a></li>
                 </ul>
-                <div class="nav-dropDown__social">
+                <div class="nav-dropDown__social visible-xs">
                      <ul class="headerRight--social">
-                    <li class="hide-xs"><a href="https://www.facebook.com/hashworks"><i class="ion-social-facebook"></i></a></li>
-                    <li class="hide-xs"><a href="https://twitter.com/hashworksco"><i class="ion-social-twitter"></a></i></li>
-                    <li class="hide-xs"><a href="https://www.linkedin.com/company/hashworks?trk=top_nav_home"><i class="ion-social-linkedin"></a></i></li>
+                    <li class=""><a href="https://www.facebook.com/hashworks"><i class="ion-social-facebook"></i></a></li>
+                    <li class=""><a href="https://twitter.com/hashworksco"><i class="ion-social-twitter"></a></i></li>
+                    <li class=""><a href="https://www.linkedin.com/company/hashworks?trk=top_nav_home"><i class="ion-social-linkedin"></a></i></li>
                 </ul>
                 </div>
                 </div>
@@ -340,8 +340,8 @@ transformation projects with confidence</h1>
 your digital transformation projects</span></p>
   <div class="getInTouchBox__input">
       <form id="submit-home-data">
-                            <input  class="commonInputBox" id="user-name" type="text" placeholder="First Name*">
-                            <input  class="commonInputBox" id="user-mail" type="text" placeholder="Email*">
+                            <input  class="commonInputBox" id="user-name" type="text" placeholder="First Name*" pattern="[A-Z][a-z]" required/>
+                            <input  class="commonInputBox" id="user-mail" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email*" required/>
                             <button type="submit" class="primaryBtn">Subscribe</button>
       </form>
                         </div>

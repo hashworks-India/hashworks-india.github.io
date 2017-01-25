@@ -16,6 +16,9 @@ a {
     padding-right: 0;
 }
 
+.visible-xs {
+  display: none;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -55,6 +58,9 @@ a {
 
 .hide-xs {
     display: none !important;
+}
+.visible-xs {
+    display: block;
 }
         
   }
