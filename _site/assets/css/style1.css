@@ -42,12 +42,9 @@
 .commonInputBox {
   width: 340px;
   height: 30px;
-  border-left: 2px solid #EA2B7B;
-  border-right: 2px solid #EA2B7B;
+  border: 1px solid #EA2B7B;
   outline: none;
-  padding: 0rem 1rem;
-  border-top: 1px solid #b9b9b9;
-  border-bottom: 1px solid #EA2B7B; }
+  padding: 0rem 1rem; }
 
 @keyframes linear {
   from {
@@ -155,6 +152,7 @@ a {
   box-shadow: 36px 3px 4px -32px rgba(194, 0, 0, 0.02); }
 
 .nav-dropDown {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -419,7 +417,7 @@ header .headerRight {
       font-size: 80px;
       position: absolute;
       color: deeppink;
-      top: -51px;
+      top: -45px;
       right: -25px; }
       .clientTalk__content--comma2 span {
         font-family: 'g-comma'; }
@@ -486,7 +484,7 @@ header .headerRight {
       font-size: 80px;
       position: absolute;
       color: deeppink;
-      top: -25px;
+      top: -12px;
       right: 15px; }
       .testimonial__content--comma2 span {
         font-family: 'g-comma'; }
