@@ -16,9 +16,6 @@ a {
     padding-right: 0;
 }
 
-.visible-xs {
-  display: none;
-}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -59,9 +56,6 @@ a {
 .hide-xs {
     display: none !important;
 }
-.visible-xs {
-    display: block;
-}
         
   }
 
@@ -92,7 +86,7 @@ a {
   }
   
   &__logo {
-      padding: 1rem;
+      padding: 30px 1rem;
 img {
       width: 48%;
       height: 48%;
