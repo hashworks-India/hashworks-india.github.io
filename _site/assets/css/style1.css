@@ -513,7 +513,8 @@ header .headerRight {
       text-align: right;
       margin-right: 2rem;
       font-size: 18px;
-      font-family: 'g-book'; }
+      font-family: 'g-book';
+      padding-top: 25px; }
       .clientTalk__content--text h2 span {
         font-size: 18px;
         font-family: 'g-bold'; }
