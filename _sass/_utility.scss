@@ -134,6 +134,109 @@ img {
     }
 }
 
+#ac-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+      background: rgba(10, 10, 10, 0.6);
+   z-index: 1001;
+}
+#popup {
+    width: 70%; 
+    position: relative;
+    top: 10%;
+   
+   margin: 0 auto;
+    i {
+            position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    color: $primarycolor;
+    cursor: pointer;
+    } 
+
+
+  .getInTouch {
+  background: #E6F7F9;
+
+  }
+  .getInTouchContainer {
+      padding: $primarypadding;
+      @media only screen and (min-width:320px) and (max-width:768px) {
+        padding: 60px 30px;
+      }
+  }
+
+  .getInTouchBox {
+    display: flex;
+    
+    &__banner {
+      margin-top: 3rem;
+      img {
+        width:250px;
+      }
+    
+    }
+    &__title {
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 2rem;
+     
+      h1 {
+        font-size: 34px;
+        font-family: 'g-lite';
+        margin-bottom: 20px;
+        span {
+           font-size: 34px;
+        font-family: 'g-lite';
+        color: $secondarycolor;
+        }
+      }
+      h2 { 
+         font-size: 34px;
+        font-family: 'g-lite';  
+        margin-bottom: 20px;
+      }
+      h3 {
+        border: 2px solid $primarybgcolor;
+        width: 150px;
+        margin-bottom: 30px;
+      }
+      p {
+         font-size: 16px;
+        font-family: 'g-book';
+        line-height: 30px;
+        span {
+          display: block;
+        }
+      }
+    }
+    &__input {
+      margin-top: 2rem;
+      input {
+        display: block;
+        margin-bottom: 1rem;
+        width: 260px;
+      }
+      input[placeholder] {
+        font-family: 'g-lite';
+      }
+     
+    }
+  }
+
+
+    @media only screen and (min-width:768px) and (max-width:1024px) {
+        top :50px;
+    }
+     @media only screen and (min-width:320px) and (max-width:767px) {
+        top :50px;
+    }
+}
+
 
 
 
