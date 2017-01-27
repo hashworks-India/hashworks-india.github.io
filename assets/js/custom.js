@@ -3279,6 +3279,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 
+if (screen.width > 767) {
 function PopUp(hideOrshow) {
    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
    else document.getElementById('ac-wrapper').removeAttribute('style');
@@ -3287,4 +3288,5 @@ window.onload = function () {
    setTimeout(function () {
        PopUp('show');
    }, 3000);
+}
 }

@@ -271,11 +271,8 @@ a {
     #popup {
       top: 50px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
-    #popup {
-      top: 50px;
-      width: 100%; }
-      #popup .getInTouchBox__title {
-        margin-left: 0px !important; } }
+    #popup #ac-wrapper, #popup #popup {
+      display: none; } }
 
 body {
   margin: 0;

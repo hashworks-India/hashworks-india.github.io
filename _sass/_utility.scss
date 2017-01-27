@@ -233,12 +233,8 @@ img {
         top :50px;
     }
      @media only screen and (min-width:320px) and (max-width:767px) {
-        top :50px;
-        width: 100%;
-        .getInTouchBox {
-            &__title {
-                margin-left: 0px !important;
-            }
+        #ac-wrapper,#popup {
+          display: none;
         }
     }
 }
