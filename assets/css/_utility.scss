@@ -87,9 +87,10 @@ a {
   
   &__logo {
       padding: 1rem;
+      margin-bottom: 2rem;
 img {
-      width: 48%;
-      height: 48%;
+      width: 10%;
+      height: 10%;
       display: inline-block;
   }
   i {
@@ -120,6 +121,7 @@ img {
     // text-transform: uppercase;
     font-family: 'g-book';
     font-size: 20px;
+    maargin-bottom: 1rem;
   } 
   li:hover {
       color: $primarycolor;
