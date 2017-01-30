@@ -950,8 +950,10 @@ margin-bottom: 15px;
         margin-left: 0;
         h1 {
           font-size: 41px;
+          margin-bottom: 0px;
           span {
             font-size: 41px;
+            display: inline-block;
           }
         }
         h2 {

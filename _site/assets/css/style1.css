@@ -922,9 +922,11 @@ header .headerRight {
     .getInTouchBox__title {
       margin-left: 0; }
       .getInTouchBox__title h1 {
-        font-size: 41px; }
+        font-size: 41px;
+        margin-bottom: 0px; }
         .getInTouchBox__title h1 span {
-          font-size: 41px; }
+          font-size: 41px;
+          display: inline-block; }
       .getInTouchBox__title h2 {
         font-size: 41px; }
       .getInTouchBox__title p {
