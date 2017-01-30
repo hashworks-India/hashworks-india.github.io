@@ -792,7 +792,8 @@ header .headerRight {
     color: #05B3C4; }
   .workflowRight__action {
     z-index: 9999;
-    position: relative; }
+    position: relative;
+    width: 100%; }
   .workflowRight__heading {
     font-size: 33px;
     font-family: 'g-book';
