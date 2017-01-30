@@ -3246,11 +3246,11 @@ $( ".MenuContent__close").click(function() {
     $(".commonMenu__icon").show(); 
 });
 
-$("#submit-home-data").submit(function (e) {
-    e.preventDefault();
+$(".showpdf").submit(function (e) {
+    e.preventDefault();  
     var userName = $('#user-name').val();
     var userMail = $('#user-mail').val();
-    // window.open("http://www.hashworks.co");
+    window.open("/assets/js/marketing/Haswork_Creative.pdf");
     $.ajax({
         url: "https://docs.google.com/a/hashworks.co/forms/d/e/1FAIpQLScYkB0OOdS3ZmTiXgnX0m2Cb-BupViWKdyWzNzVgupIbnp7Bg/formResponse",
         data: {
@@ -3262,7 +3262,7 @@ $("#submit-home-data").submit(function (e) {
         statusCode: {
             0: function () {
 
-                window.location = "http://www.hashworks.co";
+                window.location = "/assets/js/marketing/Haswork_Creative.pdf";
             }
         }
     });
@@ -3287,6 +3287,6 @@ function PopUp(hideOrshow) {
 window.onload = function () {
    setTimeout(function () {
        PopUp('show');
-   }, 3000);
+   }, 5000);
 }
 }
