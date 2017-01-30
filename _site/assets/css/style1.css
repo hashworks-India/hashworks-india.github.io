@@ -513,8 +513,7 @@ header .headerRight {
       text-align: right;
       margin-right: 2rem;
       font-size: 18px;
-      font-family: 'g-book';
-      padding-top: 25px; }
+      font-family: 'g-book'; }
       .clientTalk__content--text h2 span {
         font-size: 18px;
         font-family: 'g-bold'; }
@@ -575,7 +574,8 @@ header .headerRight {
       .testimonial__content--text h1 {
         font-family: 'g-lite';
         font-size: 18px;
-        line-height: 30px; }
+        line-height: 30px;
+        margin-bottom: 1rem; }
       .testimonial__content--text h2 {
         line-height: 30px;
         color: #EA2B7B;
