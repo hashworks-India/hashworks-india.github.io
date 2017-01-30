@@ -142,6 +142,9 @@ img {
    height: 100%;
       background: rgba(10, 10, 10, 0.6);
    z-index: 1001;
+   @media only screen and (min-width: 320px) and (max-width: 768px) {
+    display: none;
+   }
 }
 #popup {
        width: 800px;
