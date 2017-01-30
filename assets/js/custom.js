@@ -3250,7 +3250,7 @@ $(".showpdf").submit(function (e) {
     e.preventDefault();  
     var userName = $('#user-name').val();
     var userMail = $('#user-mail').val();
-    // window.open("/assets/js/marketing/Haswork_Creative.pdf");
+    window.open("/assets/js/marketing/Haswork_Creative.pdf");
     $.ajax({
         url: "https://docs.google.com/a/hashworks.co/forms/d/e/1FAIpQLScYkB0OOdS3ZmTiXgnX0m2Cb-BupViWKdyWzNzVgupIbnp7Bg/formResponse",
         data: {
@@ -3262,7 +3262,7 @@ $(".showpdf").submit(function (e) {
         statusCode: {
             0: function () {
 
-                window.location = "/assets/js/marketing/Haswork_Creative.pdf";
+                // window.location = "/assets/js/marketing/Haswork_Creative.pdf";
             }
         }
     });
