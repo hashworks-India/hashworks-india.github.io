@@ -84,6 +84,17 @@ a {
   @media only screen and (min-width:320px) and (max-width:768px) {
       height: 100%;
   }
+
+  h1 {
+    a {
+          height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #05B3C4;
+    font-family: 'g-book';
+    font-size: 20px;
+    }
+  }
   
   &__logo {
       padding: 30px 30px;
