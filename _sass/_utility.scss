@@ -144,11 +144,11 @@ img {
    z-index: 1001;
 }
 #popup {
-    width: 70%; 
+       width: 800px;
     position: relative;
     top: 10%;
-   
-   margin: 0 auto;
+    margin: 0 auto;
+    height: 450px;
     i {
             position: absolute;
     top: 15px;
@@ -164,9 +164,9 @@ img {
 
   }
   .getInTouchContainer {
-      padding: $primarypadding;
+      padding: 30px 20px;
       @media only screen and (min-width:320px) and (max-width:768px) {
-        padding: 60px 30px;
+        padding: 30px 20px;
       }
   }
 
@@ -174,7 +174,7 @@ img {
     display: flex;
     
     &__banner {
-      margin-top: 3rem;
+      margin-top: 2rem;
       img {
         width:250px;
       }
@@ -182,23 +182,23 @@ img {
     }
     &__title {
       width: 100%;
-      margin-top: 30px;
+      margin-top: 0px;
       margin-left: 2rem;
      
       h1 {
-        font-size: 34px;
+        font-size: 28px;
         font-family: 'g-lite';
-        margin-bottom: 20px;
+        margin-bottom: 8px;
         span {
-           font-size: 34px;
+           font-size: 28px;
         font-family: 'g-lite';
         color: $secondarycolor;
         }
       }
       h2 { 
-         font-size: 34px;
+         font-size: 28px;
         font-family: 'g-lite';  
-        margin-bottom: 20px;
+        margin-bottom: 8px;
       }
       h3 {
         border: 2px solid $primarybgcolor;
@@ -206,7 +206,7 @@ img {
         margin-bottom: 30px;
       }
       p {
-         font-size: 16px;
+         font-size: 14px;
         font-family: 'g-book';
         line-height: 30px;
         span {
@@ -215,7 +215,7 @@ img {
       }
     }
     &__input {
-      margin-top: 2rem;
+      margin-top: 1rem;
       input {
         display: block;
         margin-bottom: 1rem;

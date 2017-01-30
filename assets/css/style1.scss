@@ -167,7 +167,7 @@ header {
           top:0px;
           h1 {
             transform: skew(20deg);
-            padding-left: 6rem;
+            padding-left: 5rem;
           }
         }
         &__action {
@@ -195,7 +195,6 @@ header {
             font-size: 14px;
             transform: skew(20deg);
             padding-left: 7rem;
-            line-height: 18px;
           }
         }
         &__action {
@@ -787,7 +786,6 @@ margin-bottom: 15px;
     &__action {
       z-index: 9999; 
       position: relative;
-      width:100%;
     }
     &__heading {
         font-size: 33px;
