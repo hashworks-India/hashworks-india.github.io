@@ -200,6 +200,9 @@ header {
             transform: skew(20deg);
             padding-left: 7rem;
             line-height: 20px;
+            span {
+              line-height: 0;
+            }
           }
         }
         &__action {

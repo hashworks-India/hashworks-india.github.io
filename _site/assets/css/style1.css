@@ -440,6 +440,8 @@ header .headerRight {
           transform: skew(20deg);
           padding-left: 7rem;
           line-height: 20px; }
+          .hero .bannerRight__div h1 span {
+            line-height: 0; }
       .hero .bannerRight__action {
         z-index: 1;
         left: 20%;
