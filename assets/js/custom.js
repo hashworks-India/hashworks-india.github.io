@@ -3262,7 +3262,7 @@ $("#submit-home-data").submit(function (e) {
         statusCode: {
             0: function () {
 
-                window.location = "http://www.hashworks.co";
+                window.location = "https://www.docdroid.net/rxJ5ZG0/marketing-asset-full.pdf.html";
             }
         }
     });
