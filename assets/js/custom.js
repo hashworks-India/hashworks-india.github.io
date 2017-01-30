@@ -3247,10 +3247,10 @@ $( ".MenuContent__close").click(function() {
 });
 
 $("#submit-home-data").submit(function (e) {
-    e.preventDefault();
+    e.preventDefault();  
     var userName = $('#user-name').val();
     var userMail = $('#user-mail').val();
-    // window.open("http://www.hashworks.co");
+    window.open("marketing/Hashwors_Create.pdf");
     $.ajax({
         url: "https://docs.google.com/a/hashworks.co/forms/d/e/1FAIpQLScYkB0OOdS3ZmTiXgnX0m2Cb-BupViWKdyWzNzVgupIbnp7Bg/formResponse",
         data: {
