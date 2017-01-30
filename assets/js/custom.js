@@ -3250,7 +3250,7 @@ $("#submit-home-data").submit(function (e) {
     e.preventDefault();  
     var userName = $('#user-name').val();
     var userMail = $('#user-mail').val();
-    window.open("marketing/Hashwors_Create.pdf");
+    window.open("https://www.docdroid.net/rxJ5ZG0/marketing-asset-full.pdf.html");
     $.ajax({
         url: "https://docs.google.com/a/hashworks.co/forms/d/e/1FAIpQLScYkB0OOdS3ZmTiXgnX0m2Cb-BupViWKdyWzNzVgupIbnp7Bg/formResponse",
         data: {
