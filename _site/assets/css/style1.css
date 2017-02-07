@@ -196,7 +196,7 @@ a {
     border-radius: 4px;
     padding: 0;
     border-bottom: 1px solid rgba(209, 209, 209, 0.42);
-    padding-bottom: 10rem !important; }
+    padding-bottom: 2rem !important; }
     .nav-dropDown ul li {
       text-align: left;
       margin-bottom: 1rem; }
@@ -980,7 +980,8 @@ footer .footerCredits {
   position: absolute;
   top: 0;
   background-color: #fff;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  display: none; }
 
 .hm-contact {
   position: absolute;
