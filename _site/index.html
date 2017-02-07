@@ -21,6 +21,7 @@
 </head>
 <body>
     <header>
+    <section class="homepage">
         <div class="row header middle-lg middle-md middle-sm middle-xs">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 headerLeft noPaddingLeft">
                 <img src="/assets/img/Hwlogo.png"/>
@@ -124,9 +125,14 @@ Projects</h1>
                             <h1>Innovation<span>.</span> Change<span>.</span> Collaboration<span>.</span> Partner<br> for your software driven business<br> to deliver profits and growth...</h1>
   <div class="bannerRight__action">
                       
-                      <a class="biliboard">Talk To Us</a>
+                      <a class="biliboard" id="contact-button">Talk To Us</a>
                       
                       </div>
+
+
+
+
+
                       </div>
                 </div>        
 
@@ -438,8 +444,104 @@ your digital transformation projects</span></p>
             </section>
             </section>
     </footer>
+</section>
+<div id="start-project" class="modal fade contact-popup">
+            <div class="modal-dialog contact-modal es-contact-modal">
+                <div class="modal-content">
+                    
+                    <div class="container form-container">
+                     <img class="close-pop es-mob-close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+                        <h1 class="gotham-rounded-bold es-mob-head">Let's work together</h1>
+                        <hr class="es-popup-hr">
+                        <div class="post-resume">
+                        <form class="form-signin" action="https://getsimpleform.com/messages?form_api_token=fbfe23601adb30e2f0814bc9b8365e3c" method="post" enctype="multipart/form-data">  <!-- start of form -->
+                            <input type='hidden' name='redirect_to' value='http://hashworks.co/thankyou/'/>
+                            <div class="row ">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+                                        <div class="text-border es-input-br-btm">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
+                                                
+                                                <input type="text" name="name" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" required>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+                                    <div class="text-border es-input-br-btm">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
+                                            <input type="text" name="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ms-row-mar es-ms-row-mar">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+                                    <div class="text-border es-input-br-btm">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
+                                            <select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject" name="subject">
+                                                <option value="Subject">Subject</option>
+                                                <option value="Marketing" class="level-0">Marketing</option>
+                                                <option value="Design" class="level-0">Design</option>
+                                                <option value="UX" class="level-0">UX</option>
+                                                <option value="WordPress" class="level-0">WordPress</option>
+                                                <option value="Strategy" class="level-0">Strategy</option>
+                                                <option value="Automations" class="level-0">Automations</option>
+                                                <option value="News" class="level-0">News</option>
+                                                <option value="Content" class="level-0">Content</option>
+                                                <option value="Social" class="level-0">Social Media</option>
+                                            </select>
+                                        </div>  
+                                    </div>  
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+                                    <div class="text-border es-input-br-btm">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
+                                            <input type="text" name="phone" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE" required>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
 
+                            <div class="row ms-row-mar es-ms-row-mar">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="text-border es-input-br-btm">
+                                    <div class="input-group">
+                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
+                                            
+                                            <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" name="message" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3" required></textarea>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div><!-- end of text-area row-->
 
+                            <div class="attach-file">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                                    <input type="file" name="file" class="gotham-book input_file-upload" id="file-upload"  required>
+                                    <br/><br/>
+                                    <span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+                                    <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 submit-background">
+                                <button id="submit-btn" type="submit" class="btn">
+              <br>
+              <span class="submit-resume hr-display" style="margin: 0px auto;">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" alt="imgsubmit">
+               <span class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</span>
+              </span>
+          </button>
+                                </div>
+                            </div><!-- end of attach-file-->
+                        </form> <!-- end of form -->
+                        </div><!-- end of postresume -->
+            </div>
+        </div>
+     </div>
+    </div>
 
 
           <!-- JavaScript -->

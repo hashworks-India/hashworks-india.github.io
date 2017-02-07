@@ -3233,7 +3233,19 @@ $('.hw-upskill-cont').on('click', function() {
 // });
 
 
-
+$(".contact-popup").hide();
+$("#contact-button").click(function() {
+    $(".homepage").hide();
+    $(".hero").hide();
+    $(".footerContainer").hide();
+    $(".contact-popup").show();
+});
+$(".close-pop").click(function() {
+    $(".contact-popup").hide();
+    $(".homepage").show(); 
+    $(".hero").show();
+    $(".footerContainer").show();
+});
 
 
 $(".nav-dropDown").hide();
@@ -3268,6 +3280,8 @@ $(".showpdf").submit(function (e) {
     });
     return false;
 });
+
+
 
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
