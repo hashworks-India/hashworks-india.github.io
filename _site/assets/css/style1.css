@@ -310,7 +310,7 @@ header .headerRight {
     margin: 0;
     border: none; }
     header .headerRight--social li {
-      margin-left: 2.7rem;
+      margin-left: 2rem;
       display: inline-block;
       cursor: pointer; }
       header .headerRight--social li i {
@@ -388,9 +388,6 @@ header .headerRight {
       color: #FFFFFF;
       width: 92%;
       line-height: 34px; }
-      .hero .bannerRight__div h1 span {
-        font-family: 'g-bold';
-        font-size: 32px !important; }
   .hero .bannerRight__action {
     position: absolute;
     bottom: -35%;
@@ -418,39 +415,36 @@ header .headerRight {
         top: 0px; }
         .hero .bannerRight__div h1 {
           transform: skew(20deg);
-          padding-left: 6rem; }
+          padding-left: 5rem; }
       .hero .bannerRight__action {
         display: none; } }
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .hero {
-    width: 100%;
-    height: 200px; }
-    .hero__cover {
-      display: none; }
-    .hero::before {
-      height: 100%; }
-    .hero__div {
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .hero .bannerRight {
       width: 100%;
-      height: 100%;
-      top: 0px; }
-      .hero__div h1 {
-        transform: skew(12deg);
-        padding-left: 3rem;
-        font-size: 14px;
-        transform: skew(20deg);
-        padding-left: 7rem;
-        line-height: 20px; }
-        .hero__div h1 span {
-          line-height: 0; }
-    .hero__action {
-      z-index: 1;
-      left: 20%;
-      bottom: 21%;
-      display: none; } }
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
-  .hero__div h1 {
-    transform: skew(20deg);
-    width: 100%; } }
+      height: 200px; }
+      .hero .bannerRight__cover {
+        display: none; }
+      .hero .bannerRight::before {
+        height: 100%; }
+      .hero .bannerRight__div {
+        width: 100%;
+        height: 100%;
+        top: 0px; }
+        .hero .bannerRight__div h1 {
+          transform: skew(12deg);
+          padding-left: 3rem;
+          font-size: 14px;
+          transform: skew(20deg);
+          padding-left: 7rem; }
+      .hero .bannerRight__action {
+        z-index: 1;
+        left: 20%;
+        bottom: 21%;
+        display: none; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .hero .bannerRight__div h1 {
+      transform: skew(20deg);
+      width: 100%; } }
 .hero .bannerLeft {
   padding-left: 15%;
   width: 60%; }
@@ -482,23 +476,25 @@ header .headerRight {
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
     .hero .bannerLeft {
       padding-left: 75px; } }
-.hero .bannerContainer {
+
+.bannerContainer {
   display: flex; }
-.hero .clientTalk {
+
+.clientTalk {
   padding: 60px 0px;
   border-bottom: 1px solid #D8E5E5;
   background: #fff; }
-  .hero .clientTalk__image {
+  .clientTalk__image {
     margin-right: 6rem; }
-    .hero .clientTalk__image img {
+    .clientTalk__image img {
       margin-top: 5px;
       width: 135px;
       height: 135px; }
-  .hero .clientTalk__content {
+  .clientTalk__content {
     position: relative;
     margin: 0rem 3rem;
     width: 100%; }
-    .hero .clientTalk__content--comma1 {
+    .clientTalk__content--comma1 {
       position: absolute;
       top: -18px;
       left: -35px;
@@ -509,64 +505,65 @@ header .headerRight {
       -webkit-transform: rotate(7deg);
       /* Chrome, Safari, Opera */
       transform: rotate(180deg); }
-      .hero .clientTalk__content--comma1 span {
+      .clientTalk__content--comma1 span {
         font-family: 'g-comma'; }
-    .hero .clientTalk__content--comma2 {
+    .clientTalk__content--comma2 {
       font-size: 80px;
       position: absolute;
       color: deeppink;
       top: -45px;
       right: -25px; }
-      .hero .clientTalk__content--comma2 span {
+      .clientTalk__content--comma2 span {
         font-family: 'g-comma'; }
-    .hero .clientTalk__content--text h1 {
+    .clientTalk__content--text h1 {
       font-family: 'g-lite';
       font-size: 18px;
       line-height: 30px;
       width: 95%;
       margin: 0 auto;
       padding-bottom: 1rem; }
-    .hero .clientTalk__content--text h2 {
+    .clientTalk__content--text h2 {
       line-height: 30px;
       color: #EA2B7B;
       text-align: right;
       margin-right: 2rem;
       font-size: 18px;
       font-family: 'g-book'; }
-      .hero .clientTalk__content--text h2 span {
+      .clientTalk__content--text h2 span {
         font-size: 18px;
         font-family: 'g-bold'; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .clientTalk__content {
+    .clientTalk__content {
       margin: 0rem 5rem; }
-      .hero .clientTalk__content--comma1 {
+      .clientTalk__content--comma1 {
         left: 20px; }
-      .hero .clientTalk__content--comma2 {
+      .clientTalk__content--comma2 {
         right: 20px; }
-      .hero .clientTalk__content--text h1 {
+      .clientTalk__content--text h1 {
         text-align: center;
         font-size: 16px;
         width: 60%; }
-      .hero .clientTalk__content--text h2 {
+      .clientTalk__content--text h2 {
         text-align: center;
         margin-right: 0;
         margin-top: 1.5rem; }
-        .hero .clientTalk__content--text h2 span {
+        .clientTalk__content--text h2 span {
           display: block; } }
-.hero .testimonial {
+
+.testimonial {
   padding: 60px 0px;
   border-bottom: 1px solid #D8E5E5;
   background: #fff; }
-  .hero .testimonial__image {
+  .testimonial__image {
     margin-right: 4rem; }
-    .hero .testimonial__image img {
+    .testimonial__image img {
       margin-top: 5px;
       width: 135px;
       height: 135px; }
-  .hero .testimonial__content {
+  .testimonial__content {
     position: relative;
     width: 100%; }
-    .hero .testimonial__content--comma1 {
+    .testimonial__content--comma1 {
       position: absolute;
       top: 10px;
       left: -30px;
@@ -577,349 +574,356 @@ header .headerRight {
       -webkit-transform: rotate(7deg);
       /* Chrome, Safari, Opera */
       transform: rotate(180deg); }
-      .hero .testimonial__content--comma1 span {
+      .testimonial__content--comma1 span {
         font-family: 'g-comma'; }
-    .hero .testimonial__content--comma2 {
+    .testimonial__content--comma2 {
       font-size: 80px;
       position: absolute;
       color: deeppink;
       top: -12px;
       right: 15px; }
-      .hero .testimonial__content--comma2 span {
+      .testimonial__content--comma2 span {
         font-family: 'g-comma'; }
-    .hero .testimonial__content--text {
+    .testimonial__content--text {
       padding: 0rem 2rem; }
-      .hero .testimonial__content--text h1 {
+      .testimonial__content--text h1 {
         font-family: 'g-lite';
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 1rem; }
-      .hero .testimonial__content--text h2 {
+      .testimonial__content--text h2 {
         line-height: 30px;
         color: #EA2B7B;
         text-align: right;
         margin-right: 3rem;
         font-size: 18px;
         font-family: 'g-book'; }
-        .hero .testimonial__content--text h2 span {
+        .testimonial__content--text h2 span {
           font-size: 18px;
           font-family: 'g-bold'; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero .testimonial__content--text {
+    .testimonial__content--text {
       padding: 0rem 5rem 0rem 2rem; }
-      .hero .testimonial__content--text h1 {
+      .testimonial__content--text h1 {
         text-align: justify; }
-      .hero .testimonial__content--text h2 {
+      .testimonial__content--text h2 {
         margin-right: 0px; }
-    .hero .testimonial__content--comma1 {
+    .testimonial__content--comma1 {
       top: -12px; }
-    .hero .testimonial__content--comma2 {
+    .testimonial__content--comma2 {
       top: -40px; } }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .testimonial__image {
+    .testimonial__image {
       margin-right: 0;
       text-align: center;
       margin-bottom: 1rem; }
-    .hero .testimonial__content--comma1 {
+    .testimonial__content--comma1 {
       top: -10px;
       left: 10px; }
-    .hero .testimonial__content--comma2 {
+    .testimonial__content--comma2 {
       top: -45px; }
-    .hero .testimonial__content--text {
+    .testimonial__content--text {
       padding: 0rem 4rem; }
-      .hero .testimonial__content--text h1 {
+      .testimonial__content--text h1 {
         font-size: 14px;
         text-align: justify;
         margin-bottom: 1rem; }
-      .hero .testimonial__content--text h2 {
+      .testimonial__content--text h2 {
         font-size: 15px;
         margin-right: 0;
         text-align: center; }
-        .hero .testimonial__content--text h2 span {
-          font-size: 15px;
-          display: block; } }
-.hero .theoryGroup {
+        .testimonial__content--text h2 span {
+          font-size: 15px; } }
+
+.theoryGroup {
   display: flex; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .theoryGroup {
+    .theoryGroup {
       display: inline-block;
       width: 100%; } }
-.hero .theory {
+
+.theory {
   padding: 60px 0px;
   background: #05B3C4; }
-  .hero .theory__heading h1 {
+  .theory__heading h1 {
     font-size: 31px;
     font-family: 'g-book';
     line-height: 58px;
     color: #FFFFFF;
     margin-bottom: 55px; }
-    .hero .theory__heading h1 span {
+    .theory__heading h1 span {
       font-size: 31px;
       font-family: 'g-book';
       color: #EA2B7B; }
-  .hero .theory__contentHeading {
+  .theory__contentHeading {
     padding-bottom: 1rem; }
-    .hero .theory__contentHeading--title h1 {
+    .theory__contentHeading--title h1 {
       font-family: 'g-bold';
       font-size: 18px;
       line-height: 22px;
       color: #FFFFFF;
       margin-left: 15px;
       text-transform: uppercase; }
-      .hero .theory__contentHeading--title h1 span {
+      .theory__contentHeading--title h1 span {
         display: block; }
-    .hero .theory__contentHeading--border {
+    .theory__contentHeading--border {
       border: 1px solid #fff;
       margin-top: 20px;
       margin-bottom: 20px;
       width: 95%; }
-    .hero .theory__contentHeading--detail h1 {
+    .theory__contentHeading--detail h1 {
       font-family: 'g-lite';
       font-size: 16px;
       line-height: 30px;
       color: #FFFFFF; }
-      .hero .theory__contentHeading--detail h1 span {
+      .theory__contentHeading--detail h1 span {
         display: block; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero .theory__contentHeading {
+    .theory__contentHeading {
       width: 100%;
       padding-bottom: 3rem; }
-      .hero .theory__contentHeading--title h1 span {
+      .theory__contentHeading--title h1 span {
         display: inline-block; }
-      .hero .theory__contentHeading--border {
+      .theory__contentHeading--border {
         width: 100%; }
-      .hero .theory__contentHeading--detail h1 span {
+      .theory__contentHeading--detail h1 span {
         display: inline-block; } }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .theory {
+    .theory {
       padding: 60px 30px; }
-      .hero .theory__contentHeading {
+      .theory__contentHeading {
         width: 100%;
         padding-bottom: 3rem; }
-        .hero .theory__contentHeading--title h1 {
+        .theory__contentHeading--title h1 {
           font-size: 16px;
           text-align: left;
           margin-left: 0px; }
-          .hero .theory__contentHeading--title h1 span {
+          .theory__contentHeading--title h1 span {
             font-size: 16px;
             display: inline-block; }
-        .hero .theory__contentHeading--border {
+        .theory__contentHeading--border {
           width: 100%; }
-        .hero .theory__contentHeading--detail h1 span {
+        .theory__contentHeading--detail h1 span {
           display: inline-block; }
-        .hero .theory__contentHeading--iconChess {
+        .theory__contentHeading--iconChess {
           margin-bottom: 1.5rem; }
-        .hero .theory__contentHeading--iconRisk {
+        .theory__contentHeading--iconRisk {
           margin-bottom: 1.5rem; }
-        .hero .theory__contentHeading--iconDash {
+        .theory__contentHeading--iconDash {
           margin-bottom: 1.5rem; }
-      .hero .theory__heading h1 {
+      .theory__heading h1 {
         font-size: 27px;
         line-height: 50px; }
-        .hero .theory__heading h1 span {
+        .theory__heading h1 span {
           font-size: 27px; } }
-.hero .technology {
+
+.technology {
   padding: 60px 0px;
   background: #EA2B7B; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .technology {
+    .technology {
       padding: 60px 30px; } }
-.hero .technologyContainer__title h1 {
+
+.technologyContainer__title h1 {
   font-size: 33px;
   font-family: 'g-book';
   color: #FFFFFF;
   margin-bottom: 25px;
   text-align: center; }
-.hero .technologyContainer__title p {
+.technologyContainer__title p {
   font-size: 18px;
   font-family: 'g-book';
   color: #FFFFFF;
   margin-bottom: 70px;
   text-align: center; }
-.hero .technologyContainer__box:hover {
+.technologyContainer__box:hover {
   transition: all .2s ease-in-out;
   transform: scale(1.1); }
-.hero .technologyContainer__box--iconData {
+.technologyContainer__box--iconData {
   margin-bottom: 15px; }
-  .hero .technologyContainer__box--iconData img {
+  .technologyContainer__box--iconData img {
     width: 75px;
     height: 75px; }
-.hero .technologyContainer__box--iconOps {
+.technologyContainer__box--iconOps {
   margin-bottom: 15px; }
-  .hero .technologyContainer__box--iconOps img {
+  .technologyContainer__box--iconOps img {
     width: 75px;
     height: 75px; }
-.hero .technologyContainer__box--iconMobility {
+.technologyContainer__box--iconMobility {
   margin-bottom: 15px; }
-  .hero .technologyContainer__box--iconMobility img {
+  .technologyContainer__box--iconMobility img {
     width: 75px;
     height: 75px; }
-.hero .technologyContainer__box--iconUi {
+.technologyContainer__box--iconUi {
   margin-bottom: 15px; }
-  .hero .technologyContainer__box--iconUi img {
+  .technologyContainer__box--iconUi img {
     width: 75px;
     height: 75px; }
-.hero .technologyContainer__box--iconScience {
+.technologyContainer__box--iconScience {
   margin-bottom: 15px; }
-  .hero .technologyContainer__box--iconScience img {
+  .technologyContainer__box--iconScience img {
     width: 75px; }
-.hero .technologyContainer__box--heading h1 {
+.technologyContainer__box--heading h1 {
   font-size: 18px;
   font-family: 'g-book';
   text-transform: capitalize;
   margin-bottom: 10px;
   color: #FFFFFF; }
-.hero .technologyContainer__box .highlight {
+.technologyContainer__box .highlight {
   width: 100px;
   border: 2px solid #FFFFFF;
   display: none; }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .hero .technologyContainer__title {
+  .technologyContainer__title {
     text-align: center; }
-  .hero .technologyContainer__box {
+  .technologyContainer__box {
     margin-bottom: 5rem; } }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .hero .technologyContainer__box {
+  .technologyContainer__box {
     margin-bottom: 3rem; }
-  .hero .technologyContainer__title h1 {
+  .technologyContainer__title h1 {
     font-size: 27px;
     line-height: 40px; }
-  .hero .technologyContainer__title p {
+  .technologyContainer__title p {
     font-size: 16px;
     line-height: 30px; } }
-.hero .workflow {
+
+.workflow {
   padding: 60px 0px;
   background: #fff; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .workflow {
+    .workflow {
       padding: 60px 30px; } }
-.hero .workflowImage img {
+
+.workflowImage img {
   margin-top: 5rem; }
-.hero .workflowRight {
+
+.workflowRight {
   position: relative;
   padding-left: 176px; }
-  .hero .workflowRight h1 {
+  .workflowRight h1 {
     font-size: 33px;
     color: #05B3C4; }
-  .hero .workflowRight__action {
+  .workflowRight__action {
     z-index: 9999;
-    position: relative;
-    width: 100%; }
-  .hero .workflowRight__heading {
+    position: relative; }
+  .workflowRight__heading {
     font-size: 33px;
     font-family: 'g-book';
     color: #05B3C4;
     margin-bottom: 40px; }
-  .hero .workflowRight__title h1 {
+  .workflowRight__title h1 {
     font-size: 18px;
     font-family: 'g-book';
     color: #EA2B7B;
     margin-bottom: 20px; }
-  .hero .workflowRight__title p {
+  .workflowRight__title p {
     font-size: 16px;
     font-family: 'g-lite';
     color: #231F20;
     line-height: 30px;
     margin-bottom: 80px; }
-  .hero .workflowRight__icon {
+  .workflowRight__icon {
     position: absolute;
     left: 0; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .workflowRight {
+    .workflowRight {
       padding-left: 0px; }
-      .hero .workflowRight h1 {
+      .workflowRight h1 {
         font-size: 27px; }
-      .hero .workflowRight__icon {
+      .workflowRight__icon {
         position: relative;
         text-align: center;
         margin-bottom: 1.5rem; }
-      .hero .workflowRight__title h1 {
+      .workflowRight__title h1 {
         font-size: 16px; }
-      .hero .workflowRight__title p {
+      .workflowRight__title p {
         margin-bottom: 40px; } }
-.hero .clients {
+
+.clients {
   padding: 60px 0px;
   background: #fff; }
-  .hero .clients img {
+  .clients img {
     width: 150px; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero .clients__row {
+    .clients__row {
       margin-bottom: 4rem; } }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .clients__row {
+    .clients__row {
       margin-bottom: 3rem; } }
-.hero .getInTouch {
+
+.getInTouch {
   background: #E6F7F9; }
-.hero .getInTouchContainer {
+
+.getInTouchContainer {
   padding: 60px 0px; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .getInTouchContainer {
+    .getInTouchContainer {
       padding: 60px 30px; } }
-.hero .getInTouchBox {
+
+.getInTouchBox {
   display: flex; }
-  .hero .getInTouchBox__banner {
+  .getInTouchBox__banner {
     margin-top: 3rem; }
-    .hero .getInTouchBox__banner img {
+    .getInTouchBox__banner img {
       width: 350px; }
-  .hero .getInTouchBox__title {
+  .getInTouchBox__title {
     width: 100%;
     margin-top: 30px;
     margin-left: 4rem; }
-    .hero .getInTouchBox__title h1 {
+    .getInTouchBox__title h1 {
       font-size: 44px;
       font-family: 'g-lite';
       margin-bottom: 20px; }
-      .hero .getInTouchBox__title h1 span {
+      .getInTouchBox__title h1 span {
         font-size: 44px;
         font-family: 'g-lite';
         color: #05B3C4; }
-    .hero .getInTouchBox__title h2 {
+    .getInTouchBox__title h2 {
       font-size: 44px;
       font-family: 'g-lite';
       margin-bottom: 20px; }
-    .hero .getInTouchBox__title h3 {
+    .getInTouchBox__title h3 {
       border: 2px solid #EA2B7B;
       width: 220px;
       margin-bottom: 30px; }
-    .hero .getInTouchBox__title p {
+    .getInTouchBox__title p {
       font-size: 20px;
       font-family: 'g-book';
       line-height: 30px; }
-      .hero .getInTouchBox__title p span {
+      .getInTouchBox__title p span {
         display: block; }
-  .hero .getInTouchBox__input {
+  .getInTouchBox__input {
     margin-top: 2rem; }
-    .hero .getInTouchBox__input input {
+    .getInTouchBox__input input {
       display: block;
       margin-bottom: 1rem; }
-    .hero .getInTouchBox__input input[placeholder] {
+    .getInTouchBox__input input[placeholder] {
       font-family: 'g-lite'; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero .getInTouchBox__title {
+    .getInTouchBox__title {
       width: 53%;
       margin-top: 30px;
       margin-left: auto;
       margin-right: auto; }
-      .hero .getInTouchBox__title p {
+      .getInTouchBox__title p {
         text-align: justify; }
-        .hero .getInTouchBox__title p span {
+        .getInTouchBox__title p span {
           display: inline; } }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
-    .hero .getInTouchBox__banner img {
+    .getInTouchBox__banner img {
       width: 100%; }
-    .hero .getInTouchBox__title {
+    .getInTouchBox__title {
       margin-left: 0; }
-      .hero .getInTouchBox__title h1 {
-        font-size: 41px;
-        margin-bottom: 0px; }
-        .hero .getInTouchBox__title h1 span {
-          font-size: 41px;
-          display: inline-block; }
-      .hero .getInTouchBox__title h2 {
+      .getInTouchBox__title h1 {
         font-size: 41px; }
-      .hero .getInTouchBox__title p {
+        .getInTouchBox__title h1 span {
+          font-size: 41px; }
+      .getInTouchBox__title h2 {
+        font-size: 41px; }
+      .getInTouchBox__title p {
         font-size: 19px; }
-    .hero .getInTouchBox__input input {
+    .getInTouchBox__input input {
       width: 80%; } }
 
 footer .footerContainer {
