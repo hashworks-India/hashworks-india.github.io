@@ -3234,7 +3234,7 @@ $('.hw-upskill-cont').on('click', function() {
 
 
 $(".contact-popup").hide();
-$("#contact-button").click(function() {
+$(".contact-button").click(function() {
     $(".homepage").hide();
     $(".hero").hide();
     $(".footerContainer").hide();
