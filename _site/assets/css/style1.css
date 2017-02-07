@@ -974,7 +974,6 @@ footer .footerCredits {
   cursor: pointer; }
 
 #start-project {
-  display: block;
   z-index: 1;
   width: 100%;
   height: 100vh;
