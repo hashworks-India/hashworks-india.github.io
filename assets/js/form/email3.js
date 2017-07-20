@@ -36,11 +36,11 @@ for (var i = 0; i < fileLink.length; i++) {
                 $('.input_file-upload').val('');
                 $('.input_file-detail').val('');
 
-                $(".input_name").parent().parent().css('border', '1px solid #0AB4C5');
-                $(".input_email").parent().parent().css('border', '1px solid #0AB4C5');
-                $(".input_subject").parent().parent().css('border', '1px solid #0AB4C5');
-                $(".input_phone").parent().parent().css('border', '1px solid #0AB4C5');
-                $(".input_message").parent().parent().css('border', '1px solid #0AB4C5');
+                $(".input_name").parent().parent().css('border', '1px solid #F05944');
+                $(".input_email").parent().parent().css('border', '1px solid #F05944');
+                $(".input_subject").parent().parent().css('border', '1px solid #F05944');
+                $(".input_phone").parent().parent().css('border', '1px solid #F05944');
+                $(".input_message").parent().parent().css('border', '1px solid #F05944');
     }
     $(".close-pop").click(function(){
         resetTheForm();
@@ -176,7 +176,7 @@ for (var i = 0; i < fileLink.length; i++) {
     } //end of submitForm function
 
     function on_Click_Text(inputElement){
-    $(inputElement).parent().parent().css('border', '1px solid #0AB4C5');
+    $(inputElement).parent().parent().css('border', '1px solid #F05944');
     }   
     $(".input_name").click(function(){
         on_Click_Text(this);

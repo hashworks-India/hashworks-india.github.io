@@ -125,7 +125,7 @@ $(document).ready(function() {
     /* end */
 
     $(document).on('mouseenter', 'input.gsc-search-button.gsc-search-button-v2', function() {
-        $("i.fa.fa-angle-right.search-arrow").css("color", "#ee2b7b");
+        $("i.fa.fa-angle-right.search-arrow").css("color", "#F05944");
     });
     $(document).on('mouseleave', 'input.gsc-search-button.gsc-search-button-v2', function() {
         $("i.fa.fa-angle-right.search-arrow").css("color", "gray");
@@ -289,45 +289,19 @@ $(document).ready(function() {
 
     //homepage header mouse event 
 
-    $('.hw-home').mouseover(function() {
-        $("header nav").addClass('hw-fixed-header');
-    });
-
-    $('.hw-home').mouseout(function() {
-        $("header nav").removeClass('hw-fixed-header');
-    });
 
     //homepage hover mouse event
 
-    $('.navbar-default').mouseover(function() {
-        $("header nav").addClass('hw-hover-header');
-    });
-
-    $('.navbar-default').mouseout(function() {
-        $("header nav").removeClass('hw-hover-header');
-    });
+  
 
     $(".apst-wrapper").hide();
     //fixed header
     $(document).scroll(function() {
         var main = $(this).scrollTop();
 
-        if (main >= 10) {
-            if (!$('header').hasClass('hw-home')) {
-                $("header nav").addClass('hw-fixed-header');
-                $("main").css("margin-top", "70px");
-            }
+        
 
-        } else {
-            $("header nav").removeClass('hw-fixed-header');
-            $("main").css("margin-top", "0px");
-        }
-
-        if (main >= 70) {
-            if (!$('header').hasClass('hw-home')) {
-                $(".navbar-default.hw-fixed-header").css("padding-bottom", "0px")
-            }
-        }
+       
         /*for scroll top button*/
         if (main >= 50) {
             $(".our-thinking-apst-wrapper").show();
@@ -680,7 +654,7 @@ $(document).ready(function() {
                     });
                     $('#left_scroll i').css({
                         'cursor': 'pointer',
-                        'color': '#040404'
+                        'color': '##613E95'
                     });
                 }
 
@@ -812,7 +786,7 @@ $(document).ready(function() {
         });
         $('#left_scroll i').css({
             'cursor': 'pointer',
-            'color': '#040404'
+            'color': '##613E95'
         });
     });
 
@@ -825,7 +799,7 @@ $(document).ready(function() {
         // $(this).css({'cursor':'default','color':'#ccc'});
         $('#left_scroll i').css({
             'cursor': 'pointer',
-            'color': '#040404'
+            'color': '##613E95'
         });
     });
 
@@ -841,7 +815,7 @@ $(document).ready(function() {
         });
         $('#right_scroll i').css({
             'cursor': 'pointer',
-            'color': '#040404'
+            'color': '##613E95'
         });
     });
 
@@ -856,7 +830,7 @@ $(document).ready(function() {
         });
         $('#right_scroll i').css({
             'cursor': 'pointer',
-            'color': '#040404'
+            'color': '##613E95'
         });
     });
     // End of solution custom tab carousel
@@ -1856,7 +1830,7 @@ $(document).ready(function() {
         }
         $("#case-studies-total-no").text(no_of_matched_item + "/" + no_of_total_case_study_item);
         if (no_of_matched_item == 0)
-            $(".casestudy-ul ul ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b"><p>sorry, no match found</p></div>');
+            $(".casestudy-ul ul ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#F05944"><p>sorry, no match found</p></div>');
     }
 
     $("#case-studies-mobility-checkbox,#case-studies-client-checkbox,#case-studies-dataops-checkbox,#case-studies-devops-checkbox,#case-studies-datascie-checkbox,#case-studies-ui-ux-checkbox").click(function() {
@@ -1982,7 +1956,7 @@ $(document).ready(function() {
 
         $("#bootcamp-filter-total-no").text(no_of_matched_item + "/" + no_of_total_bootcamp_item);
         if (no_of_matched_item == 0)
-            $(".hw-upskilling-details  ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
+            $(".hw-upskilling-details  ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#F05944;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
     }
 
     $("#bootcamp-mobility-checkbox,#bootcamp-client-checkbox,#bootcamp-dataops-checkbox,#bootcamp-devops-checkbox,#bootcamp-datascie-checkbox,#bootcamp-ui-ux-checkbox").click(function() {
@@ -2891,11 +2865,11 @@ $(window).resize(function() {
     // $(window).load(function() {
     //     if(pageName == "bootcamp" || pageName == "blog" || pageName == "casestudy" || pageName == "collaborative_workforce" || pageName == "company" || pageName == "job_board" || pageName == "engage_us" || pageName == "navblog_detail" || pageName == "our_thinking"){
     //       $('.pf-dd a').on('click',function(){
-    //       $("#pvh5-5").attr("href", "http://127.0.0.1:4000/portfolio/#mobility");
-    //       $("#pvh1-1").attr("href", "http://127.0.0.1:4000/portfolio/#DataOps");
-    //       $("#pvh2-2").attr("href", "http://127.0.0.1:4000/portfolio/#DevOps");
-    //       $("#pvh3-3").attr("href", "http://127.0.0.1:4000/portfolio/#DataScience");
-    //       $("#pvh4-4").attr("href", "http://127.0.0.1:4000/portfolio/#ui-ux");
+    //       $("#pvh5-5").attr("href", "http://127.0.0.1:4000/services/#mobility");
+    //       $("#pvh1-1").attr("href", "http://127.0.0.1:4000/services/#DataOps");
+    //       $("#pvh2-2").attr("href", "http://127.0.0.1:4000/services/#DevOps");
+    //       $("#pvh3-3").attr("href", "http://127.0.0.1:4000/services/#DataScience");
+    //       $("#pvh4-4").attr("href", "http://127.0.0.1:4000/services/#ui-ux");
     //        });
     //      }
     //     });

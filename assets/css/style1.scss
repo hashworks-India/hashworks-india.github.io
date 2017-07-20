@@ -41,7 +41,7 @@ header {
             cursor: pointer;
          }
          .ion-navicon-round {
-           color: deeppink;
+           color: #F05944;
          }
        }
      }
@@ -119,7 +119,7 @@ header {
     &__div {
    width: 92%;
     height: 200px;
-    background: #EA2B7B;
+    background: #F05944;
     position: absolute;
     left: -116px;
     z-index: 1;
@@ -306,7 +306,7 @@ header {
                   top: -18px;
     left: -35px;
             font-size: 80px;
-            color: deeppink;
+            color: #F05944;
                -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(180deg);
@@ -317,7 +317,7 @@ header {
         &--comma2 {
           font-size: 80px;
 position: absolute;
-color: deeppink;
+color: #F05944;
    top: -45px;
     right: -25px;
     span {
@@ -404,7 +404,7 @@ color: deeppink;
                top: 10px;
     left: -30px;
             font-size: 80px;
-            color: deeppink;
+            color: #F05944;
                -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(180deg);
@@ -415,7 +415,7 @@ color: deeppink;
         &--comma2 {
           font-size: 80px;
 position: absolute;
-color: deeppink;
+color: #F05944;
     top: -12px;
     right: 15px;
     span {
@@ -605,12 +605,13 @@ color: deeppink;
           @media only screen and (min-width:320px) and (max-width:768px) {
             padding: 60px 30px;
             &__contentHeading {
+              text-align: center;
               width: 100%;
               padding-bottom: 3rem;
                  &--title {
                 h1 {
                   font-size: 16px;
-                  text-align: left;
+                  text-align: center;
                   margin-left: 0px;
                   span {
                     font-size: 16px;
@@ -795,7 +796,7 @@ margin-bottom: 15px;
       color: $secondarycolor;
     }
     &__action {
-      z-index: 9999; 
+       
       position: relative;
       width: 100%;
     }
@@ -1089,13 +1090,13 @@ footer {
     float: left;
     width: 40%;
     margin: 0px 19px 0;
-    border: 1.5px solid #EE2B7B;
+    border: 1.5px solid #F05944;
 }
 .form-container .post-resume {
     margin-top: 30px;
 }
 .text-border {
-    border: 1px solid #0AB4C5;
+    border: 1px solid #F05944;
 }
 .input-group {
     position: relative;
@@ -1175,7 +1176,7 @@ img {
           top: 20px;
         }
 .attach-file {
-    background-color: #0AB4C5;
+    background-color: #F05944;
     width: 97%;
     height: 75px;
     font-size: 13px;
@@ -1276,7 +1277,7 @@ img {
     margin-top: 24px;
 }
 .hm-show-heart {
-    color: #EE2B7B;
+    color: #F05944;
     padding: 0px 8px;
 }
 .hm-form-val {
@@ -1288,4 +1289,22 @@ img {
 }
 .hm-shows-love .social-icons {
     margin-right: 10px;
+}
+
+.MenuContent__close{
+  font-size: 25px;
+}
+
+.theory__contentHeading{
+  img{
+    width:70px;
+    height:70px;
+  }
+}
+
+.workflowRight__icon{
+  img{
+    width:120px;
+    height:90px;
+  }
 }
