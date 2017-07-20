@@ -55,14 +55,14 @@
 }
 /*.job-board-ul li {
 	list-style-type: initial;
-	color: #0AB4C5
+	color: #F05944
 } */
 
 .text-border {
-	border:1px solid #0AB4C5;
+	border:1px solid #F05944;
 }
 .attach-file {
-	background-color: #0AB4C5;
+	background-color: #F05944;
 	width: 100%;
 	height: 75px;
 	font-size: 13px;
@@ -96,7 +96,7 @@ input {
 	font-family: "gotham-rounded-light !important"; 
 }
 .hw-job1:hover {
-	color: #ee2b7b;
+	color: #F05944;
 }
 /*Placeholder*/
 	
@@ -176,7 +176,7 @@ input {
 		margin: 50px 0px;
 	}
 	.view-color {
-		color:  #ee2b7b;
+		color:  #F05944;
 	}
 	.fa-times {
 		cursor: pointer;
@@ -186,11 +186,11 @@ input {
 		cursor: pointer;
 	}
 	.pagination > .active > a , .pagination > .active > a:hover , .pagination > .active > a:focus{
-		background-color: #ee2b7b;
+		background-color: #F05944;
 		color: #fff
 	}
 	.pagination > li > a:active , .pagination > li > a:hover ,, .pagination > li > a:focus{
-		background-color: #ee2b7b;
+		background-color: #F05944;
 		color: #fff
 	}
 	.pagination > li:first-child > a {
@@ -216,7 +216,7 @@ input {
 	}
 	.apply {
 		padding:10px 10px;
-		background-color: #ee2b7b;
+		background-color: #F05944;
 		color: #fff;
 		font-size: 12px;
 		border:none;
@@ -228,8 +228,8 @@ input {
 	}
 	.apply:hover {
 	background-color: transparent;
-	border: 1px solid #ee2b7b;
-	color: #ee2b7b;
+	border: 1px solid #F05944;
+	color: #F05944;
 	}
 	.view-close {
 		position: absolute;
@@ -299,14 +299,14 @@ input {
     color:#fff;
 }
 span.page-number.clickable.active {
-    background-color: #ee2b7b;
+    background-color: #F05944;
 }
 .table-wrapper .pager {
     margin: 43px 0px;
 }
 .table-wrapper .pager p{
     font-family:"gotham-rounded-light";
-    color:#0AB4C5;
+    color:#F05944;
 }
 
 
@@ -349,7 +349,7 @@ span.page-number.clickable.active {
 	    width: 100%;
 	}
 	.srch-job-btn .job-search,.apply{
-		border:1px solid #ee2b7b;
+		border:1px solid #F05944;
 	}
 	.table > thead > tr > th{
 		padding-bottom: 25px;

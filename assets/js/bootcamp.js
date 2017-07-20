@@ -199,7 +199,7 @@ function bootcamp_filter_function(){
       
       $(".bootcamp-filter-total-no").text(no_of_matched_item+"/"+no_of_total_bootcamp_item);
       if(no_of_matched_item==0)
-      $(".hw-upskilling-details ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
+      $(".hw-upskilling-details ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#F05944;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
 }
 
   $(".bootcamp-mobility-checkbox-1,.bootcamp-client-checkbox-1,.bootcamp-dataops-checkbox-1,.bootcamp-devops-checkbox-1,.bootcamp-datascience-checkbox-1, .bootcamp-ui-ux-checkbox-1").click(function(){
@@ -311,7 +311,7 @@ bootcamp_filter_function();
       
       $(".bootcamp-filter-total-no").text(no_of_matched_item+"/"+no_of_total_bootcamp_item);
       if(no_of_matched_item==0)
-      $(".hw-upskilling-details ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
+      $(".hw-upskilling-details ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#F05944;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
 }
 
   $(".blog-mobility-checkbox-1,.blog-client-checkbox-1,.blog-dataops-checkbox-1,.blog-devops-checkbox-1,.blog-datascience-checkbox-1, .blog-ui-ux-checkbox-1").click(function(){

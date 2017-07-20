@@ -4259,7 +4259,7 @@
 		<stop  offset="0.4877" style="stop-color:#3A3A3A"/>
 		<stop  offset="0.606" style="stop-color:#212121"/>
 		<stop  offset="0.728" style="stop-color:#0E0E0E"/>
-		<stop  offset="0.856" style="stop-color:#040404"/>
+		<stop  offset="0.856" style="stop-color:##613E95"/>
 		<stop  offset="1" style="stop-color:#000000"/>
 	</radialGradient>
 	<path fill="url(#SVGID_433_)" d="M26.124,386.926c0.676,0.676,1.156,1.292,1.072,1.376s-0.699-0.396-1.375-1.072
@@ -4274,7 +4274,7 @@
 		<stop  offset="0.4877" style="stop-color:#3A3A3A"/>
 		<stop  offset="0.606" style="stop-color:#212121"/>
 		<stop  offset="0.728" style="stop-color:#0E0E0E"/>
-		<stop  offset="0.856" style="stop-color:#040404"/>
+		<stop  offset="0.856" style="stop-color:##613E95"/>
 		<stop  offset="1" style="stop-color:#000000"/>
 	</radialGradient>
 	<path fill="url(#SVGID_434_)" d="M26.124,387.23c-0.676,0.676-1.291,1.156-1.375,1.072s0.396-0.7,1.072-1.376
@@ -4289,7 +4289,7 @@
 		<stop  offset="0.4877" style="stop-color:#3A3A3A"/>
 		<stop  offset="0.606" style="stop-color:#212121"/>
 		<stop  offset="0.728" style="stop-color:#0E0E0E"/>
-		<stop  offset="0.856" style="stop-color:#040404"/>
+		<stop  offset="0.856" style="stop-color:##613E95"/>
 		<stop  offset="1" style="stop-color:#000000"/>
 	</radialGradient>
 	<ellipse fill="url(#SVGID_435_)" cx="25.972" cy="387.079" rx="0.366" ry="2.946"/>
@@ -4303,7 +4303,7 @@
 		<stop  offset="0.4877" style="stop-color:#3A3A3A"/>
 		<stop  offset="0.606" style="stop-color:#212121"/>
 		<stop  offset="0.728" style="stop-color:#0E0E0E"/>
-		<stop  offset="0.856" style="stop-color:#040404"/>
+		<stop  offset="0.856" style="stop-color:##613E95"/>
 		<stop  offset="1" style="stop-color:#000000"/>
 	</radialGradient>
 	<ellipse fill="url(#SVGID_436_)" cx="25.973" cy="387.078" rx="2.946" ry="0.365"/>
@@ -4316,7 +4316,7 @@
 		<stop  offset="0.4877" style="stop-color:#3A3A3A"/>
 		<stop  offset="0.606" style="stop-color:#212121"/>
 		<stop  offset="0.728" style="stop-color:#0E0E0E"/>
-		<stop  offset="0.856" style="stop-color:#040404"/>
+		<stop  offset="0.856" style="stop-color:##613E95"/>
 		<stop  offset="1" style="stop-color:#000000"/>
 	</radialGradient>
 	<circle fill="url(#SVGID_437_)" cx="25.886" cy="387.031" r="1.43"/>

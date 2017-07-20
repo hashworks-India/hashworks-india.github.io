@@ -38,7 +38,7 @@
     }
      
     .es-line {
-    background-color: #0ab4c5;
+    background-color: #613E95;
     bottom: 0;
     height: 2px;
     left: 50%;
@@ -54,8 +54,8 @@
         padding:0px;
     }*/
     .es-custom-btn {
-    background-color: #0ab4c5;
-    border: 1px solid #0ab4c5;
+    background-color: #613E95;
+    border: 1px solid #613E95;
     color: #fff;
     font-family: "gotham-rounded-bold";
     font-size: 0.75rem;
@@ -65,8 +65,8 @@
     }
     .es-custom-btn:hover {
         background-color: transparent;
-        border: 1px solid #0ab4c5;
-        color: #0ab4c5;
+        border: 1px solid #613E95;
+        color: #613E95;
     }
     .know-more {
         margin: 0 auto;
@@ -156,7 +156,7 @@
     margin-left: 0px;
     }
     .es-border-left {
-    border-left: 5px solid #ee2b7b;
+    border-left: 5px solid #F05944;
     margin-bottom: 20px;
     padding-bottom: 10px;
     }
@@ -277,10 +277,10 @@
         width:100%;
     }
     .pvh-active {
-    border-bottom: 4px solid #ee2b7b;
+    border-bottom: 4px solid #F05944;
     }
     .pvh-active {
-        border-bottom: 4px solid #ee2b7b;
+        border-bottom: 4px solid #F05944;
     }
     .tab-val{
         padding-bottom: 10px;
@@ -687,7 +687,7 @@ h2 {
     }
     .mob-business-head{
         font-size: 12px;
-        color: #ee2b7b;
+        color: #F05944;
         font-family:"gotham-rounded-light"; 
         padding-left: 3%;
         padding-top: 3%;
@@ -715,7 +715,7 @@ h2 {
         display: none;
     }
     #mob-nav > li.active > a, #mob-nav > li.active > a:focus, #mob-nav > li.active > a:hover {
-        color: #ee2b7b;
+        color: #F05944;
         border-bottom: none;
     }
      #mob-nav{

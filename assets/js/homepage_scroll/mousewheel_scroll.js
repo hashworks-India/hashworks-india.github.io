@@ -134,7 +134,7 @@ $('body, html').delay(1000).animate({
         // $('li').addClass('other-li');
     }
     else {
-        $(".scroll-indicators li .hw-label").css("color","#ee2b7b");
+        $(".scroll-indicators li .hw-label").css("color","#F05944");
     }
 
    });
