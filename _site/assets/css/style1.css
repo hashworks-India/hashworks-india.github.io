@@ -374,3 +374,5 @@ img { vertical-align: middle; border: 0; }
 .theory__contentHeading img { width: 70px; height: 70px; }
 
 .workflowRight__icon img { width: 120px; height: 90px; }
+
+.theme-background-color { background-color: #613E95 !important; }
